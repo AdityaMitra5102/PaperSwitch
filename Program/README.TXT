@@ -4,7 +4,7 @@ Operating System: Raspbian Jessie
 Save the folder as /home/pi/Desktop/Program
 add the following lines to ~/.bashrc
 
-export PATH=/home/pi/Desktop/Program
+
 cd /home/pi/Desktop/Program
 python main.py
 
@@ -32,6 +32,6 @@ cd /home/pi/Desktop/Program
 ngrok authtoken <AUTHTOKEN> 		(Get authtoken from ngrok.com)
 
 Add the following lines to ~/.bashrc at the end
-export PATH=/home/pi/Desktop/Program
+
 cd /home/pi/Desktop/Program
 python main.py
