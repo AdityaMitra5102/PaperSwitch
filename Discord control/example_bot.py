@@ -33,4 +33,4 @@ async def on_message(message):
         r=requests.get(url = URL, params = 'switchoff')
         await message.channel.send('Turned Light off')
         print('Light turn off request received')
-client.run('Nzc0NDY1NTgyNzExOTYzNjY5.X6YLRw.SYfzA9YSzQqziOlOwozEMJLxtDw')
+client.run('.....') #add bot token
