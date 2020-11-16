@@ -1,9 +1,8 @@
 #import webbrowser
 import discord
-import requests
-#from os import system
-#link='start msedge -inprivate http://234e6111cda5.ngrok.io/'
-URL = 'http://234e6111cda5.ngrok.io/'
+
+from os import system
+
 client = discord.Client()
 
 @client.event
@@ -12,7 +11,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-   
+
 
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
@@ -24,13 +23,17 @@ async def on_message(message):
         await message.channel.send('Write $turnoff to Turn off light')
         print('Help printed')
     if message.content.startswith('$turnon'):
-        #system(link+"switchon")
-        r=requests.get(url = URL, params = 'switchon')
+        system('python switchon.py')
+        #r=requests.get(url = URL, params = 'switchon')
         await message.channel.send('Turned Light on')
         print('Light turn on request received')
     if message.content.startswith('$turnoff'):
-        #system(link+"switchoff")
-        r=requests.get(url = URL, params = 'switchoff')
+        system('python switchoff.py')
+        #r=requests.get(url = URL, params = 'switchoff')
         await message.channel.send('Turned Light off')
         print('Light turn off request received')
-client.run('.....') #add bot token
+a1="gWad2q1ctZNHc5IjEAFtzAhpajs"
+a2="Nzc0NDY1NTgyNzExOTYzNjY5."
+a3="X6YLRw."
+a4=a2+a3+a1
+client.run(a4)
